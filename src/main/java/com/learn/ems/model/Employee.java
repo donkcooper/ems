@@ -1,17 +1,16 @@
 package com.learn.ems.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Builder
 @Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "employee")
 public class Employee {
 
     @Id
